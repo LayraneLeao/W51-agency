@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>W51 Agency</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo-w51.svg" alt="Logo da W51 Agency">
+        <nav>
+            <a href="#" class="menu-link">Clientes</a>
+            <a href="#" class="menu-link">Como Funciona</a>
+            <a href="#" class="menu-link">Nossos Serviços</a>
+            <a href="#" id="botao-diagnostico">Diagnostico Grátis</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cta-diagnostico">
+            <article>
+                <div class="cta-titulo-subtitulo">
+                    <h1>Análise de <br>Marketing <br>Digital Grátis</h1>
+                    <p>Faça gratuitamente uma análise completa <br>de suas ações de Marketing Digital. <br> Receba seu diagnóstico hoje mesmo.</p>
+                </div>
+                <div class="cta-botao-diagnostico">
+                    <button class="botao-cta">Quero meu diagnóstico agora</button>
+                </div>
+                
+            </article>
+        </section>
+
+        <section class="clientes-secao">
+            <h2>Alguns dos clientes que já confiam em nosso trabalho</h2>
+            <div class="logo-marca-clientes">
+
+            </div>
+
+        </section>
+
+        <form action="">
+            <div id="titulo-formulario">
+                <h3>FORMULÁRIO DE DIAGNÓSTICO</h3>
+            </div>
+
+
+            <div class="campos-formulario">
+                <!--Campo Nome-->
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite aqui" required class="input">
+            </div>
+
+            <div class="campos-formulario">
+                <!--Campo Email-->
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite aqui" required class="input">
+            </div>
+
+            <div id="tel-cargo-pai" class="campos-formulario">
+                <div class="tel-cargo-filho">
+                    <!--Campo Telefone-->
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" pattern="^\(?[0-9]{2}\)?\s?[0-9]{5}-[0-9]{4}$" name="telefone" id="telefone"
+                        placeholder="(75) 98456-2531" required class="input">
+                </div>
+                <div class="tel-cargo-filho">
+                    <!--Campo Cargo-->
+                    <label for="cargo">Cargo</label>
+                    <input type="text" name="cargo" id="cargo" placeholder="Digite aqui" required class="input">
+                </div>
+            </div>
+            <!--Colocar esses campo lado a lado-->
+
+            <div class="campos-formulario">
+                <!--Campo Empresa-->
+                <label for="empresa">Empresa</label>
+                <input type="text" name="empresa" id="empresa" placeholder="Digite aqui" required class="input">
+            </div>
+
+            <div class="campos-formulario">
+                <!--Campo Site-->
+                <label for="site">Site</label>
+                <input type="url" name="site" id="site" placeholder="Digite aqui" required class="input">
+            </div>
+
+            <div class="campos-formulario">
+                <!--Campo Investimento em Marketing-->
+                <label for="marketing">Média de investimento em marketing mensal? </label>
+                <select name="marketing" id="marketing" required class="input">
+                    <option value="" disabled selected>Selecione a média de investimento</option>
+                    <option value="ate-500">Até R$ 500</option>
+                    <option value="500-2000">De R$ 500 a R$ 2.000</option>
+                    <option value="2000-5000">De R$ 2.000 a R$ 5.000</option>
+                    <option value="5000-10000">De R$ 5.000 a R$ 10.000</option>
+                    <option value="10000-20000">De R$ 10.000 a R$ 20.000</option>
+                    <option value="acima-20000">Acima de R$ 20.000</option>
+                </select>
+            </div>
+
+
+            <!--Este campo precisa fazer a verificação se algum campo foi selecionado, utilize JavaScript-->
+            <!--Campo Serviços Investidos-->
+            <div id="servicos-pai" class="campos-formulario">
+                <label for="servicos">Quais serviços você investe? </label>
+                <div class="servicos-filho">
+                    <input type="checkbox" name="servico-off" id="servico-off" class="input">
+                    <label for="servico-off">Off</label>
+
+                    <input type="checkbox" name="servico-social" id="servico-social" class="input">
+                    <label for="servico-social">Social</label>
+
+                    <input type="checkbox" name="servico-outros" id="servico-outros" class="input">
+                    <label for="servico-outros">Outros</label>
+                </div>
+
+                <div class="servicos-filho">
+                    <input type="checkbox" name="servico-midia-on" id="servico-midia-on" class="input">
+                    <label for="servico-midia-on">Mídia On</label>
+
+                    <input type="checkbox" name="servico-inbound" id="servico-inbound" class="input">
+                    <label for="servico-inbound">Inbound</label>
+
+                    <input type="checkbox" name="nao-servico" id="nao-servico" class="input">
+                    <label for="nao-servico">Não invisto</label>
+                </div>
+            </div>
+
+            <div class="campos-formulario">
+                <!--Campo mais informações-->
+                <label for="mais-info">Gostaria de passar alguma informação (de forma resumida), que seja importante
+                    para o seu diagnóstico?</label>
+                <input type="text" name="mais-info" id="mais-info" placeholder="Digite aqui" class="input">
+            </div>
+
+            <div>
+                <!--Campo checkbok-->
+                <input type="checkbox" name="check-newsletter" id="check-newsletter" class="input">
+                <!--Mudar a cor para verde do check-->
+                <label for="check-newsletter">Participar da newsletter</label>
+            </div>
+
+            <!--FALTANDO: Recaptcha, confirmação robô-->
+
+            <div id="botao-campos-formulario">
+                <!--Botão-->
+                <input type="submit" value="Quero meu diagnóstico gratuito" id="input-botao-campos-formulario">
+            </div>
+
+        </form>
+        <section class="servicos-secao">
+            <h2 class="titulo-servicos">Quais são os nossos serviços?</h2>
+            <ul class="listas-servicos">
+                <li>
+                    <img src="img/icon-check.svg" alt="icone de check">
+                    Planejamento estratégico de marketing digital
+                </li>
+                <li>
+                    <img src="img/icon-check.svg" alt="icone de check">
+                    Gestão de tráfego pago (Google Ads, Meta Ads, LinkedIn Ads, Bing Ads)
+                </li>
+                <li>
+                    <img src="img/icon-check.svg" alt="icone de check">
+                    SEO e marketing de conteúdo
+                </li>
+                <li>
+                    <img src="img/icon-check.svg" alt="icone de check">
+                    Redes sociais e engajamento
+                </li>
+                <li>
+                    <img src="img/icon-check.svg" alt="icone de check">
+                    E-mail marketing e automação
+                </li>
+                <li>
+                    <img src="img/icon-check.svg" alt="icone de check">
+                    Estratégias de CRM e nutrição de leads (Incluindo Salesforce, RD Station, Hubspot entre outras)
+                </li>
+                <li>
+                    <img src="img/icon-check.svg" alt="icone de check">
+                    UX/UI e otimização de conversão (CRO)
+                </li>
+                <li>
+                    <img src="img/icon-check.svg" alt="icone de check">
+                    Criação de sites e landing pages
+                </li>
+                <li>
+                    <img src="img/icon-check.svg" alt="icone de check">
+                    Desenvolvimento de sistemas
+                </li>
+                <li>
+                    <img src="img/icon-check.svg" alt="icone de check">
+                    Criação de E-commerce (Loja Virtual)
+                </li>
+            </ul>
+        </section>
+        <section class="beneficios-secao">
+            <div class="conjunto-beneficios">
+                <h2>Saiba ...</h2>
+                <ul class="listas-beneficios">
+                    <li>
+                        Como aumentar e ter leads mais qualificados
+                        <img src="img/icon-arrow.svg" alt="icone de seta">
+                    </li>
+                    <li>
+                        Como aumentar as vendas
+                        <img src="img/icon-arrow.svg" alt="icone de seta">
+                    </li>
+                    <li>
+                        Como diminuir o custo por aquisição
+                        <img src="img/icon-arrow.svg" alt="icone de seta">
+                    </li>
+                    <li>
+                        Como acompanhar em tempo real os resultados de marketing
+                        <img src="img/icon-arrow.svg" alt="icone de seta">
+                    </li>
+                    <li>
+                        Como melhorar o posicionamento digital
+                        <img src="img/icon-arrow.svg" alt="icone de seta">
+                    </li>
+                    <li>
+                        Como aumentar o engajamento nas redes sociais
+                        <img src="img/icon-arrow.svg" alt="icone de seta">
+                    </li>
+                    <li>
+                        Como criar régua de automação e o CRM Integrado
+                        <img src="img/icon-arrow.svg" alt="icone de seta">
+                    </li>
+                    <li>
+                        Como melhorar o atendimento com sua agência
+                        <img src="img/icon-arrow.svg" alt="icone de seta">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
