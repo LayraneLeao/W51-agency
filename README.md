@@ -20,7 +20,7 @@ O site foi desenvolvido como uma landing page completa com seções de:
 
 
 
-## ⚠️ Observação importante
+## Observação importante
 🚧 **O site ainda não é totalmente responsivo.**  
 Atualmente, ele funciona bem em **desktop**, mas precisa de ajustes adicionais para telas menores (tablets e smartphones).  
 
