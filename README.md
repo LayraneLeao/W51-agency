@@ -3,7 +3,7 @@
 Este repositório contém o **site institucional da W51 Agency**, uma agência de marketing digital.  
 O projeto apresenta os serviços da empresa, cases de clientes e disponibiliza um formulário para solicitar um **diagnóstico gratuito de marketing digital**.
 
-> Visualize o site [aqui!]("https://w51-agency.netlify.app/")
+> Visualize o site [aqui!](https://w51-agency.netlify.app/)
 
 
 ## Sobre o projeto
