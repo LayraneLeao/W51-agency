@@ -49,6 +49,7 @@
             margin-right: 3rem;
         }
 
+
         header a {
             font-size: 1.4rem;
             font-weight: 400;
@@ -62,11 +63,21 @@
             color: #333F97;
         }
 
+        .menu-link:hover {
+            font-weight: bold;
+        }
+
         #botao-diagnostico {
             color: #F5F9FC;
             background-color: #9D3BC2;
             padding: 0.55rem 1.0625rem;
             border-radius: 10px;
+        }
+
+        #botao-diagnostico:hover {
+            background-color: #8A2FA8;
+            transform: translateY(-2px);
+            font-weight: bold;
         }
 
         /* SECTION CTA - PRINCIPAL */
@@ -651,22 +662,42 @@
         }
         /* PARCEIROS PARTNER*/
         .parceiros-secao{
-            background-color: #F5F9FC;
+            background-color: transparent;
             display: flex;
             flex-flow: wrap row;
             align-items: center;
             justify-content: center;
             gap: 20px;
             padding: 30px 40px;
-            margin: 30px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            height: 300px;
         }
 
         /* FOOTER */
         .footer-container {
-            background-color: #3B1BA3;
+            background-image: url(img/background-footer.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position-y: -150px;
             display: flex;
             flex-direction: column;
             padding: 60px 0 30px;
+            position: relative;
+            z-index: 10;
+        }
+        .footer-container::before {
+            content: "";
+            position: absolute;
+            top: -150px; /* controla o quanto a onda "sobe" */
+            left: 0;
+            width: 100%;
+            height: 200px; /* altura da onda */
+            background: url("img/background-footer.png") no-repeat top center;
+            background-size: 100% auto;
+            z-index: 2;
         }
 
         .sobre-footer {
@@ -728,6 +759,7 @@
 
         .final-footer nav {
             display: flex;
+            align-items: center;
             gap: 20px;
         }
 
@@ -739,9 +771,22 @@
         }
 
         .footer-link:hover {
-            color: #9B3CC3;
             font-weight: bold;
             text-decoration: underline white 2px;
+        }
+
+        .botao-diagnostico {
+            color: #F5F9FC;
+            background-color: #9D3BC2;
+            padding: 0.55rem 1.0625rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .botao-diagnostico:hover {
+            background-color: #8A2FA8;
+            transform: translateY(-2px);
+            font-weight: bold;
         }
 
         /* Placeholder para imagens */
